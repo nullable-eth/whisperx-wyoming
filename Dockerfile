@@ -26,7 +26,7 @@ RUN ln -sf /usr/bin/python3.10 /usr/bin/python3
 WORKDIR /app
 
 RUN pip3 install --no-cache-dir whisperx==3.8.2
-RUN pip3 install --no-cache-dir wyoming==1.8.0
+RUN pip3 install --no-cache-dir wyoming==1.8.0 librosa
 
 # Upgrade the bundled pyannote VAD checkpoint once at build time so every
 # container start doesn't relive the lightning migration warning.
